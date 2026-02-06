@@ -1,0 +1,406 @@
+2026-01-19 16:10:12,536 | INFO | bg_remover | Logger initialized.
+2026-01-19 16:24:17,952 | INFO | bg_remover | Logger initialized.
+2026-01-19 16:27:33,602 | INFO | bg_remover | Logger initialized.
+2026-01-19 16:30:54,781 | INFO | bg_remover | Received file: casual shirt 2.jpg for background removal.
+2026-01-19 16:30:54,782 | INFO | bg_remover | Processing file: casual shirt 2.jpg, size: 68160 bytes.
+2026-01-19 16:30:54,783 | INFO | bg_remover | Removing background...
+2026-01-19 16:34:58,253 | INFO | bg_remover | Background removal successful.
+2026-01-19 16:35:02,257 | INFO | bg_remover | Received file: casual shirt 2.jpg for background removal.
+2026-01-19 16:35:02,257 | INFO | bg_remover | Processing file: casual shirt 2.jpg, size: 68160 bytes.
+2026-01-19 16:35:02,257 | INFO | bg_remover | Removing background...
+2026-01-19 16:35:04,170 | INFO | bg_remover | Background removal successful.
+2026-01-19 16:51:56,898 | INFO | bg_remover | Logger initialized.
+2026-01-19 16:52:13,873 | INFO | bg_remover | Logger initialized.
+2026-01-19 16:52:44,860 | INFO | bg_remover | Received file: casual shirt 2.jpg for background removal.
+2026-01-19 16:52:44,860 | INFO | bg_remover | Processing file: casual shirt 2.jpg, size: 68160 bytes.
+2026-01-19 16:52:44,860 | INFO | bg_remover | Saved original file to uploads/originals/156f401f-515b-4840-8188-83f723964a9d_casual shirt 2.jpg.
+2026-01-19 16:52:44,860 | INFO | bg_remover | Removing background...
+2026-01-19 16:52:46,050 | ERROR | bg_remover | Error during background removal.
+Traceback (most recent call last):
+  File "C:\Users\KEM\Downloads\bg-remover\backend\app\routes.py", line 40, in remove_background
+    output_bytes = remove(input_bytes)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\bg.py", line 284, in remove
+    session = new_session("u2net", *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\session_factory.py", line 48, in new_session
+    return session_class(model_name, sess_opts, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\sessions\base.py", line 34, in __init__
+    self.inner_session = ort.InferenceSession(
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 485, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 584, in _create_inference_session
+    sess.initialize_session(providers, provider_options, disabled_optimizers)
+onnxruntime.capi.onnxruntime_pybind11_state.RuntimeException: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Exception during initialization: bad allocation
+2026-01-19 16:52:46,521 | INFO | bg_remover | Received file: casual shirt 2.jpg for background removal.
+2026-01-19 16:52:46,521 | INFO | bg_remover | Processing file: casual shirt 2.jpg, size: 68160 bytes.
+2026-01-19 16:52:46,521 | INFO | bg_remover | Saved original file to uploads/originals/ea8c45f3-1c3e-440c-9880-900acc347e51_casual shirt 2.jpg.
+2026-01-19 16:52:46,521 | INFO | bg_remover | Removing background...
+2026-01-19 16:53:07,700 | INFO | bg_remover | Background removal successful.
+2026-01-19 16:53:07,713 | INFO | bg_remover | Saved output file to outputs/ea8c45f3-1c3e-440c-9880-900acc347e51_output.png.
+2026-01-19 16:54:07,351 | INFO | bg_remover | Received file: casual shirt 1.jpg for background removal.
+2026-01-19 16:54:07,351 | INFO | bg_remover | Processing file: casual shirt 1.jpg, size: 68667 bytes.
+2026-01-19 16:54:07,354 | INFO | bg_remover | Saved original file to uploads/originals/ef8b1e02-54f7-465f-82ec-64facc60af4a_casual shirt 1.jpg.
+2026-01-19 16:54:07,354 | INFO | bg_remover | Removing background...
+2026-01-19 16:54:08,163 | ERROR | bg_remover | Error during background removal.
+Traceback (most recent call last):
+  File "C:\Users\KEM\Downloads\bg-remover\backend\app\routes.py", line 40, in remove_background
+    output_bytes = remove(input_bytes)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\bg.py", line 284, in remove
+    session = new_session("u2net", *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\session_factory.py", line 48, in new_session
+    return session_class(model_name, sess_opts, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\sessions\base.py", line 34, in __init__
+    self.inner_session = ort.InferenceSession(
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 485, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 584, in _create_inference_session
+    sess.initialize_session(providers, provider_options, disabled_optimizers)
+onnxruntime.capi.onnxruntime_pybind11_state.RuntimeException: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Exception during initialization: bad allocation
+2026-01-19 16:54:30,283 | INFO | bg_remover | Received file: casual shirt 1.jpg for background removal.
+2026-01-19 16:54:30,283 | INFO | bg_remover | Processing file: casual shirt 1.jpg, size: 68667 bytes.
+2026-01-19 16:54:30,286 | INFO | bg_remover | Saved original file to uploads/originals/523fbde5-ed6f-49c3-9aba-315a4a2f21fb_casual shirt 1.jpg.
+2026-01-19 16:54:30,286 | INFO | bg_remover | Removing background...
+2026-01-19 16:54:31,102 | ERROR | bg_remover | Error during background removal.
+Traceback (most recent call last):
+  File "C:\Users\KEM\Downloads\bg-remover\backend\app\routes.py", line 40, in remove_background
+    output_bytes = remove(input_bytes)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\bg.py", line 284, in remove
+    session = new_session("u2net", *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\session_factory.py", line 48, in new_session
+    return session_class(model_name, sess_opts, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\sessions\base.py", line 34, in __init__
+    self.inner_session = ort.InferenceSession(
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 485, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 584, in _create_inference_session
+    sess.initialize_session(providers, provider_options, disabled_optimizers)
+onnxruntime.capi.onnxruntime_pybind11_state.RuntimeException: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Exception during initialization: bad allocation
+2026-01-19 16:55:06,269 | INFO | bg_remover | Logger initialized.
+2026-01-19 16:55:26,404 | INFO | bg_remover | Received file: casual shirt 1.jpg for background removal.
+2026-01-19 16:55:26,404 | INFO | bg_remover | Processing file: casual shirt 1.jpg, size: 68667 bytes.
+2026-01-19 16:55:26,411 | INFO | bg_remover | Saved original file to uploads/originals/fe98b766-053e-49ab-95f0-9fadb3b16fcf_casual shirt 1.jpg.
+2026-01-19 16:55:26,411 | INFO | bg_remover | Removing background...
+2026-01-19 16:55:26,978 | ERROR | bg_remover | Error during background removal.
+Traceback (most recent call last):
+  File "C:\Users\KEM\Downloads\bg-remover\backend\app\routes.py", line 40, in remove_background
+    output_bytes = remove(input_bytes)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\bg.py", line 284, in remove
+    session = new_session("u2net", *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\session_factory.py", line 48, in new_session
+    return session_class(model_name, sess_opts, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\sessions\base.py", line 34, in __init__
+    self.inner_session = ort.InferenceSession(
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 485, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 573, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+onnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\KEM\.u2net\u2net.onnx failed:bad allocation
+2026-01-19 16:55:32,725 | INFO | bg_remover | Received file: casual shirt 1.jpg for background removal.
+2026-01-19 16:55:32,725 | INFO | bg_remover | Processing file: casual shirt 1.jpg, size: 68667 bytes.
+2026-01-19 16:55:32,725 | INFO | bg_remover | Saved original file to uploads/originals/bdb6ba4e-ce3d-4479-9090-065ab753ba0d_casual shirt 1.jpg.
+2026-01-19 16:55:32,725 | INFO | bg_remover | Removing background...
+2026-01-19 16:55:34,136 | ERROR | bg_remover | Error during background removal.
+Traceback (most recent call last):
+  File "C:\Users\KEM\Downloads\bg-remover\backend\app\routes.py", line 40, in remove_background
+    output_bytes = remove(input_bytes)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\bg.py", line 284, in remove
+    session = new_session("u2net", *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\session_factory.py", line 48, in new_session
+    return session_class(model_name, sess_opts, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\rembg\sessions\base.py", line 34, in __init__
+    self.inner_session = ort.InferenceSession(
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 485, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+  File "C:\Users\KEM\Downloads\bg-remover\backend\venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 573, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+onnxruntime.capi.onnxruntime_pybind11_state.Fail: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\KEM\.u2net\u2net.onnx failed:bad allocation
+2026-01-19 16:58:17,529 | INFO | bg_remover | Logger initialized.
+2026-01-19 16:58:44,395 | INFO | bg_remover | Received file: casual shirt 1.jpg for background removal.
+2026-01-19 16:58:44,395 | INFO | bg_remover | Processing file: casual shirt 1.jpg, size: 68667 bytes.
+2026-01-19 16:58:44,395 | INFO | bg_remover | Saved original file to uploads/originals/8cf21490-29dc-41fe-9326-a7042cd83e4b_casual shirt 1.jpg.
+2026-01-19 16:58:44,395 | INFO | bg_remover | Removing background...
+2026-01-19 16:58:46,556 | INFO | bg_remover | Background removal successful.
+2026-01-19 16:58:46,556 | INFO | bg_remover | Saved output file to outputs/8cf21490-29dc-41fe-9326-a7042cd83e4b_output.png.
+2026-01-19 16:58:49,488 | INFO | bg_remover | Received file: casual shirt 1.jpg for background removal.
+2026-01-19 16:58:49,488 | INFO | bg_remover | Processing file: casual shirt 1.jpg, size: 68667 bytes.
+2026-01-19 16:58:49,493 | INFO | bg_remover | Saved original file to uploads/originals/140bdbcb-f96e-461b-b25f-143b37409c58_casual shirt 1.jpg.
+2026-01-19 16:58:49,493 | INFO | bg_remover | Removing background...
+2026-01-19 16:58:51,831 | INFO | bg_remover | Background removal successful.
+2026-01-19 16:58:51,846 | INFO | bg_remover | Saved output file to outputs/140bdbcb-f96e-461b-b25f-143b37409c58_output.png.
+2026-01-19 16:59:35,492 | INFO | bg_remover | Received file: softscape.jpg for background removal.
+2026-01-19 16:59:35,492 | INFO | bg_remover | Processing file: softscape.jpg, size: 110560 bytes.
+2026-01-19 16:59:35,492 | INFO | bg_remover | Saved original file to uploads/originals/874ce2a3-091b-4c8d-8814-ea8a7c2f1b93_softscape.jpg.
+2026-01-19 16:59:35,492 | INFO | bg_remover | Removing background...
+2026-01-19 16:59:37,383 | INFO | bg_remover | Background removal successful.
+2026-01-19 16:59:37,383 | INFO | bg_remover | Saved output file to outputs/874ce2a3-091b-4c8d-8814-ea8a7c2f1b93_output.png.
+2026-01-19 16:59:40,930 | INFO | bg_remover | Received file: softscape.jpg for background removal.
+2026-01-19 16:59:40,932 | INFO | bg_remover | Processing file: softscape.jpg, size: 110560 bytes.
+2026-01-19 16:59:40,934 | INFO | bg_remover | Saved original file to uploads/originals/afab27fd-2938-44f4-95e1-4e97a03912ae_softscape.jpg.
+2026-01-19 16:59:40,934 | INFO | bg_remover | Removing background...
+2026-01-19 16:59:42,774 | INFO | bg_remover | Background removal successful.
+2026-01-19 16:59:42,774 | INFO | bg_remover | Saved output file to outputs/afab27fd-2938-44f4-95e1-4e97a03912ae_output.png.
+2026-01-19 17:01:00,355 | INFO | bg_remover | Received file: WhatsApp Image 2026-01-08 at 5.53.38 PM (2).jpeg for background removal.
+2026-01-19 17:01:00,355 | INFO | bg_remover | Processing file: WhatsApp Image 2026-01-08 at 5.53.38 PM (2).jpeg, size: 414030 bytes.
+2026-01-19 17:01:00,355 | INFO | bg_remover | Saved original file to uploads/originals/30f61040-8ab8-4092-a787-5e3966a41aa2_WhatsApp Image 2026-01-08 at 5.53.38 PM (2).jpeg.
+2026-01-19 17:01:00,355 | INFO | bg_remover | Removing background...
+2026-01-19 17:01:02,320 | INFO | bg_remover | Background removal successful.
+2026-01-19 17:01:02,336 | INFO | bg_remover | Saved output file to outputs/30f61040-8ab8-4092-a787-5e3966a41aa2_output.png.
+2026-01-21 15:53:22,218 | INFO | bg_remover | Logger initialized.
+2026-01-21 15:54:47,959 | INFO | bg_remover | Logger initialized.
+2026-01-21 15:55:35,906 | INFO | bg_remover | Received file: architecture.jpg for background removal.
+2026-01-21 15:55:35,909 | INFO | bg_remover | Processing file: architecture.jpg, size: 147696 bytes.
+2026-01-21 15:55:35,922 | INFO | bg_remover | Background task started for uploads/originals/6722cded-d9e0-4ff1-bf34-0545737e73d3_architecture.jpg
+2026-01-21 15:55:35,922 | ERROR | bg_remover | Background task failed [Errno 2] No such file or directory: 'uploads/originals/6722cded-d9e0-4ff1-bf34-0545737e73d3_architecture.jpg'
+2026-01-21 15:55:37,713 | INFO | bg_remover | Received file: architecture.jpg for background removal.
+2026-01-21 15:55:37,716 | INFO | bg_remover | Processing file: architecture.jpg, size: 147696 bytes.
+2026-01-21 15:55:37,716 | INFO | bg_remover | Background task started for uploads/originals/fb65af55-b83d-4f0f-b8ec-1a18dadec381_architecture.jpg
+2026-01-21 15:55:37,716 | ERROR | bg_remover | Background task failed [Errno 2] No such file or directory: 'uploads/originals/fb65af55-b83d-4f0f-b8ec-1a18dadec381_architecture.jpg'
+2026-01-21 16:01:06,695 | INFO | bg_remover | Logger initialized.
+2026-01-21 16:01:15,485 | INFO | bg_remover | Received file: architecture.jpg for background removal.
+2026-01-21 16:01:15,485 | INFO | bg_remover | Processing file: architecture.jpg, size: 147696 bytes.
+2026-01-21 16:01:15,505 | INFO | bg_remover | Background task started for uploads/originals/f78eb8e3-d406-4d7f-9fee-029f4ed087b1_architecture.jpg
+2026-01-21 16:01:15,505 | ERROR | bg_remover | Background task failed [Errno 2] No such file or directory: 'uploads/originals/f78eb8e3-d406-4d7f-9fee-029f4ed087b1_architecture.jpg'
+2026-01-21 16:01:17,062 | INFO | bg_remover | Received file: architecture.jpg for background removal.
+2026-01-21 16:01:17,062 | INFO | bg_remover | Processing file: architecture.jpg, size: 147696 bytes.
+2026-01-21 16:01:17,065 | INFO | bg_remover | Background task started for uploads/originals/3a62ed7e-9c07-4580-90fd-7cd530704e52_architecture.jpg
+2026-01-21 16:01:17,065 | ERROR | bg_remover | Background task failed [Errno 2] No such file or directory: 'uploads/originals/3a62ed7e-9c07-4580-90fd-7cd530704e52_architecture.jpg'
+2026-01-21 16:02:57,769 | INFO | bg_remover | Logger initialized.
+2026-01-21 16:02:57,875 | INFO | bg_remover | Received file: architecture.jpg for background removal.
+2026-01-21 16:02:57,875 | INFO | bg_remover | Processing file: architecture.jpg, size: 147696 bytes.
+2026-01-21 16:02:57,891 | INFO | bg_remover | Background task started for uploads/originals/9b5e86c2-02a4-4bb7-998f-e4f100d118a1_architecture.jpg
+2026-01-21 16:02:57,892 | INFO | bg_remover | Saved original image to uploads/originals/9b5e86c2-02a4-4bb7-998f-e4f100d118a1_architecture.jpg
+2026-01-21 16:03:02,641 | INFO | bg_remover | Background removal completed
+2026-01-21 16:03:02,646 | INFO | bg_remover | Saved processed image to outputs/9b5e86c2-02a4-4bb7-998f-e4f100d118a1_output.png
+2026-01-21 16:03:02,646 | INFO | bg_remover | Background task completed: outputs/9b5e86c2-02a4-4bb7-998f-e4f100d118a1_output.png
+2026-01-21 16:03:57,482 | INFO | bg_remover | Received file: kodnest height.png for background removal.
+2026-01-21 16:03:57,482 | INFO | bg_remover | Processing file: kodnest height.png, size: 96974 bytes.
+2026-01-21 16:03:57,484 | INFO | bg_remover | Background task started for uploads/originals/5df1b766-d160-451d-95d5-c94a58231fd3_kodnest height.png
+2026-01-21 16:03:57,487 | INFO | bg_remover | Saved original image to uploads/originals/5df1b766-d160-451d-95d5-c94a58231fd3_kodnest height.png
+2026-01-21 16:03:59,856 | INFO | bg_remover | Received file: kodnest height.png for background removal.
+2026-01-21 16:03:59,856 | INFO | bg_remover | Processing file: kodnest height.png, size: 96974 bytes.
+2026-01-21 16:03:59,864 | INFO | bg_remover | Background task started for uploads/originals/35be6545-5d85-4b07-bfe3-c73e8b8abaa8_kodnest height.png
+2026-01-21 16:03:59,903 | INFO | bg_remover | Saved original image to uploads/originals/35be6545-5d85-4b07-bfe3-c73e8b8abaa8_kodnest height.png
+2026-01-21 16:04:02,323 | INFO | bg_remover | Background removal completed
+2026-01-21 16:04:02,325 | INFO | bg_remover | Saved processed image to outputs/5df1b766-d160-451d-95d5-c94a58231fd3_output.png
+2026-01-21 16:04:02,327 | INFO | bg_remover | Background task completed: outputs/5df1b766-d160-451d-95d5-c94a58231fd3_output.png
+2026-01-21 16:04:03,608 | INFO | bg_remover | Background removal completed
+2026-01-21 16:04:03,621 | INFO | bg_remover | Saved processed image to outputs/35be6545-5d85-4b07-bfe3-c73e8b8abaa8_output.png
+2026-01-21 16:04:03,621 | INFO | bg_remover | Background task completed: outputs/35be6545-5d85-4b07-bfe3-c73e8b8abaa8_output.png
+2026-01-21 16:05:05,667 | INFO | bg_remover | Logger initialized.
+2026-01-21 16:25:22,711 | INFO | bg_remover | Logger initialized.
+2026-01-21 16:26:37,511 | INFO | bg_remover | Received file: only dabler logo3.png for background removal.
+2026-01-21 16:26:37,525 | INFO | bg_remover | Processing file: only dabler logo3.png, size: 1416415 bytes.
+2026-01-21 16:26:37,525 | INFO | bg_remover | Job 6c779216-f5c2-4d59-8667-4444fc03d3b8 started
+2026-01-21 16:26:37,541 | INFO | bg_remover | Saved original image to uploads/originals/6c779216-f5c2-4d59-8667-4444fc03d3b8_only dabler logo3.png
+2026-01-21 16:26:41,649 | INFO | bg_remover | Background removal completed
+2026-01-21 16:26:41,653 | INFO | bg_remover | Saved processed image to outputs/6c779216-f5c2-4d59-8667-4444fc03d3b8_output.png
+2026-01-21 16:26:41,653 | INFO | bg_remover | Job 6c779216-f5c2-4d59-8667-4444fc03d3b8 completed successfully
+2026-01-21 17:31:38,578 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:32:34,878 | INFO | bg_remover | Received file: From KlickPin CF Urban Fury en 2025 _ Éclaboussures de peinture Urbain Graffiti.jpg for background removal.
+2026-01-21 17:32:34,878 | INFO | bg_remover | Processing file: From KlickPin CF Urban Fury en 2025 _ Éclaboussures de peinture Urbain Graffiti.jpg, size: 156487 bytes.
+2026-01-21 17:32:34,904 | INFO | bg_remover | Job 1f1dca1d-7342-43d8-a392-2a743f59a311 started
+2026-01-21 17:32:34,907 | INFO | bg_remover | Saved original image to uploads/originals/1f1dca1d-7342-43d8-a392-2a743f59a311_From KlickPin CF Urban Fury en 2025 _ Éclaboussures de peinture Urbain Graffiti.jpg
+2026-01-21 17:32:39,041 | INFO | bg_remover | Background removal completed
+2026-01-21 17:32:39,043 | INFO | bg_remover | Saved processed image to outputs/1f1dca1d-7342-43d8-a392-2a743f59a311_output.png
+2026-01-21 17:32:39,045 | INFO | bg_remover | Job 1f1dca1d-7342-43d8-a392-2a743f59a311 completed successfully
+2026-01-21 17:46:19,283 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:46:57,459 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:48:20,054 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:50:08,177 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:52:48,466 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:55:41,833 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:55:47,608 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:55:52,708 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:55:57,948 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:58:18,869 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:58:36,187 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:58:51,934 | INFO | bg_remover | Received file: lambo bg.jpg for background removal.
+2026-01-21 17:58:51,937 | INFO | bg_remover | Processing file: lambo bg.jpg, size: 87001 bytes.
+2026-01-21 17:58:53,482 | INFO | bg_remover | Received file: lambo bg.jpg for background removal.
+2026-01-21 17:58:53,482 | INFO | bg_remover | Processing file: lambo bg.jpg, size: 87001 bytes.
+2026-01-21 17:59:37,797 | INFO | bg_remover | Logger initialized.
+2026-01-21 17:59:42,619 | INFO | bg_remover | Received file: lambo bg.jpg for background removal.
+2026-01-21 17:59:42,628 | INFO | bg_remover | Processing file: lambo bg.jpg, size: 87001 bytes.
+2026-01-21 18:00:07,750 | INFO | bg_remover | Logger initialized.
+2026-01-21 18:03:38,737 | INFO | bg_remover | Received file: lambo bg.jpg for background removal.
+2026-01-21 18:03:38,737 | INFO | bg_remover | Processing file: lambo bg.jpg, size: 87001 bytes.
+2026-01-21 18:05:32,718 | INFO | bg_remover | Logger initialized.
+2026-01-21 18:05:33,022 | INFO | bg_remover | Received file: lambo bg.jpg for background removal.
+2026-01-21 18:05:33,023 | INFO | bg_remover | Processing file: lambo bg.jpg, size: 87001 bytes.
+2026-01-21 18:05:33,104 | INFO | bg_remover | Job 80272873-3390-4bff-9ba9-eb1d6a6ccd79 started
+2026-01-21 18:05:33,107 | INFO | bg_remover | Saved original image to uploads/originals/80272873-3390-4bff-9ba9-eb1d6a6ccd79_lambo bg.jpg
+2026-01-21 18:05:37,170 | INFO | bg_remover | Background removal completed
+2026-01-21 18:05:37,174 | INFO | bg_remover | Saved processed image to outputs/80272873-3390-4bff-9ba9-eb1d6a6ccd79_output.png
+2026-01-21 18:05:37,176 | INFO | bg_remover | Job 80272873-3390-4bff-9ba9-eb1d6a6ccd79 completed successfully
+2026-01-21 18:09:44,675 | INFO | bg_remover | Logger initialized.
+2026-01-21 18:10:34,671 | INFO | bg_remover | Logger initialized.
+2026-01-25 11:43:46,313 | INFO | bg_remover | Logger initialized.
+2026-01-25 11:44:25,983 | INFO | bg_remover | Received file: logo3.png for background removal.
+2026-01-25 11:44:25,987 | INFO | bg_remover | Processing file: logo3.png, size: 1380493 bytes.
+2026-01-25 11:48:56,296 | INFO | bg_remover | Logger initialized.
+2026-01-25 11:49:11,979 | INFO | bg_remover | Received file: logo3.png for background removal.
+2026-01-25 11:49:11,982 | INFO | bg_remover | Processing file: logo3.png, size: 1380493 bytes.
+2026-01-25 11:49:12,028 | INFO | bg_remover | Job e4b7069d-5625-47d1-8265-fabc70da5693 started
+2026-01-25 11:49:12,032 | INFO | bg_remover | Saved original image to uploads/originals/e4b7069d-5625-47d1-8265-fabc70da5693_logo3.png
+2026-01-25 11:49:14,640 | INFO | bg_remover | Received file: logo3.png for background removal.
+2026-01-25 11:49:14,643 | INFO | bg_remover | Processing file: logo3.png, size: 1380493 bytes.
+2026-01-25 11:49:14,648 | INFO | bg_remover | Job 8fc8f703-11e7-4838-9bbe-a32429fadd8c started
+2026-01-25 11:49:14,653 | INFO | bg_remover | Saved original image to uploads/originals/8fc8f703-11e7-4838-9bbe-a32429fadd8c_logo3.png
+2026-01-25 11:49:17,004 | INFO | bg_remover | Background removal completed
+2026-01-25 11:49:17,008 | INFO | bg_remover | Saved processed image to outputs/e4b7069d-5625-47d1-8265-fabc70da5693_output.png
+2026-01-25 11:49:17,015 | INFO | bg_remover | Job e4b7069d-5625-47d1-8265-fabc70da5693 completed successfully
+2026-01-25 11:49:18,311 | INFO | bg_remover | Background removal completed
+2026-01-25 11:49:18,449 | INFO | bg_remover | Saved processed image to outputs/8fc8f703-11e7-4838-9bbe-a32429fadd8c_output.png
+2026-01-25 11:49:18,453 | INFO | bg_remover | Job 8fc8f703-11e7-4838-9bbe-a32429fadd8c completed successfully
+2026-01-25 12:06:36,049 | INFO | bg_remover | Logger initialized.
+2026-01-25 12:10:52,567 | INFO | bg_remover | Logger initialized.
+2026-01-25 12:11:12,366 | INFO | bg_remover | Logger initialized.
+2026-01-25 12:17:03,850 | INFO | bg_remover | Logger initialized.
+2026-01-25 07:21:47,931 | INFO | bg_remover | Logger initialized.
+2026-01-25 07:43:43,278 | INFO | bg_remover | Logger initialized.
+2026-01-25 09:42:56,332 | INFO | bg_remover | Logger initialized.
+2026-01-25 09:55:04,584 | INFO | bg_remover | Logger initialized.
+2026-01-25 09:56:03,309 | INFO | bg_remover | Processing file: Logo1.png, size: 1207950 bytes.
+2026-01-25 10:00:14,774 | INFO | bg_remover | Processing file: Logo2.png, size: 1383885 bytes.
+2026-01-25 10:15:51,575 | INFO | bg_remover | Logger initialized.
+2026-01-25 10:15:55,792 | INFO | bg_remover | Logger initialized.
+2026-01-25 10:16:58,377 | INFO | bg_remover | Processing file: Logo1.png, size: 1207950 bytes.
+2026-01-25 10:17:26,005 | INFO | bg_remover | Processing file: Logo2.png, size: 1383885 bytes.
+2026-01-25 10:17:44,550 | INFO | bg_remover | Processing file: sample 1.jpg, size: 38157 bytes.
+2026-01-25 15:51:38,374 | INFO | bg_remover | Logger initialized.
+2026-01-25 15:52:01,055 | INFO | bg_remover | Processing file: Logo1.png, size: 1207950 bytes.
+2026-01-25 16:05:10,834 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:05:57,875 | INFO | bg_remover | Processing file: logo3.png, size: 1380493 bytes.
+2026-01-25 16:11:45,853 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:12:35,782 | INFO | bg_remover | Processing file: Logo1.png, size: 1207950 bytes.
+2026-01-25 16:27:00,572 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:28:16,809 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:28:33,058 | INFO | bg_remover | Processing file: Logo1.png, size: 1207950 bytes.
+2026-01-25 16:37:13,547 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:37:16,603 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:37:21,006 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:38:39,117 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:38:40,712 | INFO | bg_remover | celery job 1ee17fa9-4fd6-42c7-881f-2741795aa1eb started.
+2026-01-25 16:38:43,236 | INFO | bg_remover | Celery job 1ee17fa9-4fd6-42c7-881f-2741795aa1eb completed
+2026-01-25 16:39:00,433 | INFO | bg_remover | Processing file: Logo1.png, size: 1207950 bytes.
+2026-01-25 16:39:00,851 | INFO | bg_remover | celery job 8abe67d2-1e77-4929-9f5c-77d7d2db5ebe started.
+2026-01-25 16:39:04,836 | INFO | bg_remover | Celery job 8abe67d2-1e77-4929-9f5c-77d7d2db5ebe completed
+2026-01-25 16:46:52,292 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:47:07,387 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:47:19,100 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:47:28,156 | INFO | bg_remover | Logger initialized.
+2026-01-25 16:47:40,061 | INFO | bg_remover | Logger initialized.
+2026-01-25 17:49:02,452 | INFO | bg_remover | Logger initialized.
+2026-01-25 17:54:05,051 | INFO | bg_remover | Logger initialized.
+2026-01-25 17:55:01,420 | INFO | bg_remover | Logger initialized.
+2026-01-25 17:56:47,232 | INFO | bg_remover | Logger initialized.
+2026-01-25 18:00:08,452 | INFO | bg_remover | Logger initialized.
+2026-01-31 15:50:25,740 | INFO | bg_remover | Logger initialized.
+2026-01-31 15:50:40,353 | INFO | bg_remover | Logger initialized.
+2026-01-31 15:51:29,687 | INFO | bg_remover | Logger initialized.
+2026-01-31 15:55:48,283 | INFO | bg_remover | Logger initialized.
+2026-01-31 15:58:51,741 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:01:30,623 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:03:11,740 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:03:49,779 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:08:22,024 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:10:10,539 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:18:17,172 | INFO | bg_remover | [de2640b9-c33d-42b8-b05b-274da22d1294] Job queued by user@example.com
+2026-01-31 16:18:19,242 | INFO | bg_remover | celery job de2640b9-c33d-42b8-b05b-274da22d1294 started.
+2026-01-31 16:18:22,019 | INFO | bg_remover | Celery job de2640b9-c33d-42b8-b05b-274da22d1294 completed
+2026-01-31 16:56:32,511 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:56:41,109 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:56:52,016 | INFO | bg_remover | Logger initialized.
+2026-01-31 16:57:56,085 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:01:19,492 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:01:40,642 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:15:43,139 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:15:52,012 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:16:16,232 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:17:22,691 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:19:18,642 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:22:42,249 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:22:47,987 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:23:17,253 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:30:38,411 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:32:00,291 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:32:29,443 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:33:05,097 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:33:40,587 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:34:15,789 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:35:12,661 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:38:12,868 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:38:41,605 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:39:33,473 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:39:56,043 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:40:16,535 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:40:55,420 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:43:14,680 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:46:35,006 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:47:01,396 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:49:37,737 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:49:58,929 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:52:14,742 | INFO | bg_remover | Logger initialized.
+2026-01-31 17:59:08,605 | INFO | bg_remover | Logger initialized.
+2026-01-31 18:00:56,304 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:23:11,440 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:23:35,438 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:34:56,955 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:36:06,970 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:39:16,314 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:39:51,453 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:46:13,374 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:46:34,313 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:46:44,801 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:50:13,412 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:56:12,229 | INFO | bg_remover | Logger initialized.
+2026-02-01 11:58:03,681 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:04:20,109 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:10:19,435 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:11:40,907 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:11:48,750 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:16:29,467 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:16:41,121 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:17:40,324 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:18:25,284 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:21:29,778 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:21:56,112 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:22:11,024 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:22:17,249 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:25:12,494 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:30:47,583 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:40:41,506 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:41:06,352 | INFO | bg_remover | Logger initialized.
+2026-02-01 12:52:35,530 | INFO | bg_remover | Logger initialized.
+2026-02-01 13:20:29,389 | INFO | bg_remover | Logger initialized.
+2026-02-01 13:20:55,530 | INFO | bg_remover | Logger initialized.
+2026-02-01 13:34:25,161 | INFO | bg_remover | Logger initialized.
+2026-02-01 13:38:59,875 | INFO | bg_remover | Logger initialized.
+2026-02-01 13:39:53,013 | INFO | bg_remover | Logger initialized.
+2026-02-01 13:40:07,150 | INFO | bg_remover | Logger initialized.
+2026-02-01 13:40:13,829 | INFO | bg_remover | Logger initialized.
+2026-02-01 16:13:35,814 | INFO | bg_remover | Logger initialized.
+2026-02-01 16:13:45,035 | INFO | bg_remover | Logger initialized.
+2026-02-01 16:21:23,923 | INFO | bg_remover | Logger initialized.
+2026-02-01 16:21:57,368 | INFO | bg_remover | Logger initialized.
